@@ -15,7 +15,7 @@ spec:
       containers:
         - name: {{ include "recommendationservice.name" . }}
           image: "{{ .Values.DockerRepo }}:{{ .Values.DockerTag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }} 
+          imagePullPolicy: Always 
           ports:
           - containerPort: 8080
           readinessProbe:
