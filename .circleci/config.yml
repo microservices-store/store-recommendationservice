@@ -57,7 +57,7 @@ jobs:
       - deployhub-orb/deploy:
         application: $COMPONENT_APPLICATION
         appversion: latest
-        deployenv: $DH_DEPLOY_ENV 
+        environment: $DH_DEPLOY_ENV 
 workflows:
   on-commit:
     jobs:
