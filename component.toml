@@ -2,7 +2,7 @@ Application = "GLOBAL.Santa Fe Software.Online Store Company.Hipster Store;July 
 Application_Version = "1.2.9.1"
 # DeployEnv = "GLOBAL.ortelius.saas.aks-cluster"
 
-Name = "GLOBAL.Santa Fe Software.Online Store Company.Purchase Processing.Shipping Service.shippingservice"
+Name = "GLOBAL.Santa Fe Software.Online Store Company.Store Services.Recommendation Service.recommendationservice"
 Variant = "${BRANCH_NAME}"
 Version = "v1.2.2.${BUILDNUM}-g${SHORT_SHA}"
 
@@ -13,11 +13,11 @@ Version = "v1.2.2.${BUILDNUM}-g${SHORT_SHA}"
 [Attributes]
      BuildId = "${BUILD_ID}"
      BuildUrl = "https://console.cloud.google.com/cloud-build/builds/${BUILD_ID}?project=${PROJECT_ID}"
-     Chart = "chart/shippingservice"
+     Chart = "chart/recommendationservice"
      ChartNameSpace = "stores"
      CustomAction = "GLOBAL.HelmChart"
      DockerBuildDate = "${BLDDATE}"
-     DockerRepo = "quay.io/hipsterstore/shippingservice"
+     DockerRepo = "quay.io/hipsterstore/recommendationservice"
      DockerSha = "${DIGEST}"
      DockerTag = "${IMAGE_TAG}"
      GitBranch = "${BRANCH_NAME}"
